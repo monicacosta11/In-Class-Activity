@@ -10,6 +10,21 @@ namespace In_Class_Activity
     {
         static void Main(string[] args)
         {
+            Console.Write("What is your name? ");
+
+            try
+            {
+                string input = Console.ReadLine();
+
+                Console.WriteLine(input);
+                Console.ReadKey(true);
+
+            }
+            catch
+            {
+                Console.WriteLine("There was an error");
+                Console.ReadKey(true);
+            }
         }
     }
 }
